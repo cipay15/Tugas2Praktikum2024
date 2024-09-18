@@ -18,9 +18,8 @@ class TampilData extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Perkenalan"),
-        backgroundColor:
-            Colors.blue, // Set warna latar belakang AppBar menjadi biru
-        foregroundColor: Colors.white, // Set warna teks AppBar menjadi putih
+        backgroundColor: Colors.blue,
+        foregroundColor: Colors.white,
       ),
       body: Container(
         margin: const EdgeInsets.all(10),
@@ -29,8 +28,8 @@ class TampilData extends StatelessWidget {
             Text(
               "Nama saya $nama, NIM $nim, dan umur saya adalah $umur tahun",
               style: const TextStyle(
-                fontSize: 16, // Ukuran font
-                fontWeight: FontWeight.bold, // Ketebalan font
+                fontSize: 16,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],

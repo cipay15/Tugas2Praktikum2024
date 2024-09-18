@@ -19,21 +19,19 @@ class FormDataState extends State<FormData> {
       appBar: AppBar(
         title: const Text("Input Data"),
         backgroundColor: Colors.blue,
-        foregroundColor: Colors.white, //
+        foregroundColor: Colors.white,
       ),
       body: Container(
-        padding:
-            const EdgeInsets.all(16.0), // Increased padding for better spacing
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          crossAxisAlignment:
-              CrossAxisAlignment.stretch, // Make widgets take full width
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             _textboxNama(),
-            SizedBox(height: 16.0), // Add space between fields
+            SizedBox(height: 16.0),
             _textboxNIM(),
-            SizedBox(height: 16.0), // Add space between fields
+            SizedBox(height: 16.0),
             _textboxTahun(),
-            SizedBox(height: 24.0), // Add space before the button
+            SizedBox(height: 24.0),
             _tombolSimpan(),
           ],
         ),
@@ -45,7 +43,7 @@ class FormDataState extends State<FormData> {
     return TextField(
       decoration: InputDecoration(
         labelText: "Nama",
-        border: OutlineInputBorder(), // Add a border to the text field
+        border: OutlineInputBorder(),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
       ),
@@ -57,7 +55,7 @@ class FormDataState extends State<FormData> {
     return TextField(
       decoration: InputDecoration(
         labelText: "NIM",
-        border: OutlineInputBorder(), // Add a border to the text field
+        border: OutlineInputBorder(),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
       ),
@@ -69,7 +67,7 @@ class FormDataState extends State<FormData> {
     return TextField(
       decoration: InputDecoration(
         labelText: "Tahun Lahir",
-        border: OutlineInputBorder(), // Add a border to the text field
+        border: OutlineInputBorder(),
         contentPadding:
             const EdgeInsets.symmetric(horizontal: 12.0, vertical: 8.0),
       ),
@@ -79,7 +77,6 @@ class FormDataState extends State<FormData> {
 
   Widget _tombolSimpan() {
     return SizedBox(
-      width: double.infinity, // Membuat tombol mengambil lebar penuh
       child: ElevatedButton(
         onPressed: () {
           String nama = _namaController.text;
@@ -97,18 +94,16 @@ class FormDataState extends State<FormData> {
         },
         child: const Text('Simpan'),
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.blue, // Set warna tombol menjadi biru
-          foregroundColor: Colors.white, // Set warna teks tombol menjadi putih
-          elevation: 8, // Menambahkan bayangan pada tombol
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+          elevation: 8,
           shape: RoundedRectangleBorder(
-            borderRadius:
-                BorderRadius.circular(16.0), // Sudut tombol yang membulat
+            borderRadius: BorderRadius.circular(16.0),
           ),
-          padding: const EdgeInsets.symmetric(
-              vertical: 16.0), // Menyesuaikan tinggi tombol
+          padding: const EdgeInsets.symmetric(vertical: 16.0),
           textStyle: const TextStyle(
-            fontSize: 18, // Ukuran font
-            fontWeight: FontWeight.bold, // Ketebalan font
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
