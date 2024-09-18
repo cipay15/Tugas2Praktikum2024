@@ -16,6 +16,6 @@ NIM : H1D022096
 Shift Baru: D
 
 ## Screenshot
-Contoh :
-![Lampiran Form](form.png)
-![Lampiran Hasil](hasil.png)
+
+![Lampiran Form](formSyifa.png)
+![Lampiran Hasil](hasilSyifa.png)
